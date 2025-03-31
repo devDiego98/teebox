@@ -14,7 +14,7 @@
 
       .container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         gap: 20px;
         margin-top: 30px;
       }
@@ -64,14 +64,22 @@
     <div class="container">
       <!-- Default widget (demo mode) -->
       <div>
-        <h3>Default Widget (New York)</h3>
+        <h3>No Api Key Example</h3>
+        <weather-widget></weather-widget>
+      </div>
+      <div>
+        <h3>Wrong Api Key Example</h3>
         <weather-widget api-key="a-random-string"></weather-widget>
       </div>
 
       <!-- Dark theme widget -->
       <div>
         <h3>Dark Theme (Paris)</h3>
-        <weather-widget city="Paris" theme="dark"></weather-widget>
+        <weather-widget
+          city="Paris"
+          theme="dark"
+          api-key="a8a068a4a6e8fba359710ca234756c68"
+        ></weather-widget>
       </div>
 
       <!-- Imperial units widget -->
